@@ -20,7 +20,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="i7D_cdbSN9RMwjDOPvnE-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MediaDevices&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;enumerateDevices(): array InputDeviceInfo&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;getSupportedConstraints()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;getDisplayMedia()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;getUserMedia()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;selectAudioOutput()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;devicechange&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="40" y="360" width="250" height="140" as="geometry" />
+          <mxGeometry x="80" y="360" width="250" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
