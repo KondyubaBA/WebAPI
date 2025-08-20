@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0" pages="2">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="941" dy="1711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,6 +72,17 @@
         </mxCell>
         <mxCell id="i7D_cdbSN9RMwjDOPvnE-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;OverconstrainedError&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="720" y="380" width="210" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oohLSK-Lair7pmI6X5-J" name="Страница — 2">
+    <mxGraphModel dx="1364" dy="886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="V6zfNlQwWes-Jxclg9Ec-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RTCPeerConnection&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;canTrickleIceCandidates&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;connectionState&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;currentLocalDescription&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;currentRemoteDescription&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;iceConnectionState&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;iceGatheringState&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;localDescription&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;peerIdentity&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;pendingLocalDescription&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;pendingRemoteDescription&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;remoteDescription&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;sctp&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;signalingState&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="40" width="360" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
