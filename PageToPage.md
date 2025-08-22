@@ -21,6 +21,97 @@ const pc2 = new RTCPeerConnection({
 });
 ```
 
+### 2. Настройка обработчиков ICE кандидатов
+#### Peer1:
+```js
+pc1.onicecandidate = (event) => {
+    if (event.candidate) {
+        // Отправляем кандидат Peer2 через сервер
+        sendToPeer2ViaServer({
+            type: 'ice-candidate',
+            candidate: event.candidate
+        });
+    }
+};
+```
+
+#### Peer2:
+```js
+pc2.onicecandidate = (event) => {
+    if (event.candidate) {
+        // Отправляем кандидат Peer1 через сервер
+        sendToPeer1ViaServer({
+            type: 'ice-candidate',
+            candidate: event.candidate
+        });
+    }
+};
+```
+
+### 3. Создание и обмен предложением (Offer)
+#### Peer1 создает предложение:
+```js
+async function createOffer() {
+    const offer = await pc1.createOffer();
+    await pc1.setLocalDescription(offer);
+    
+    // Отправляем предложение Peer2
+    sendToPeer2ViaServer({
+        type: 'offer',
+        offer: offer
+    });
+}
+```
+
+#### Peer2 получает предложение:
+```js
+async function handleOffer(offer) {
+    await pc2.setRemoteDescription(offer);
+    
+    // Создаем ответ
+    const answer = await pc2.createAnswer();
+    await pc2.setLocalDescription(answer);
+    
+    // Отправляем ответ Peer1
+    sendToPeer1ViaServer({
+        type: 'answer',
+        answer: answer
+    });
+}
+```
+
+### 4. Обработка ответа (Answer)
+#### Peer1 получает ответ:
+```js
+async function handleAnswer(answer) {
+    await pc1.setRemoteDescription(answer);
+}
+```
+
+### 5. Обмен ICE кандидатами
+#### Peer1 добавляет кандидат от Peer2:
+```js
+async function handleIceCandidate(candidate) {
+    try {
+        await pc1.addIceCandidate(candidate);
+    } catch (error) {
+        console.error('Ошибка добавления ICE кандидата:', error);
+    }
+}
+```
+
+#### Peer2 добавляет кандидат от Peer1:
+```js
+async function handleIceCandidate(candidate) {
+    try {
+        await pc2.addIceCandidate(candidate);
+    } catch (error) {
+        console.error('Ошибка добавления ICE кандидата:', error);
+    }
+}
+```
+
+
 ### Полная последовательность
 1. ✅ Инициализация - оба пира создают RTCPeerConnection
 2. ✅ Настройка обработчиков - настраивают onicecandidate
