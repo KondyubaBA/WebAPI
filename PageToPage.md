@@ -127,3 +127,16 @@ async function handleIceCandidate(candidate) {
 2. Обмен кандидатами происходит параллельно с обменом SDP
 3. Кандидаты можно добавлять в любое время, даже до установки remote description
 4. Событие oniceconnectionstatechange покажет статус соединения
+
+### Состояния соединения:
+```js
+pc1.onconnectionstatechange = () => {
+    console.log('Состояние соединения:', pc1.connectionState);
+    // new, connecting, connected, disconnected, failed, closed
+};
+
+pc1.oniceconnectionstatechange = () => {
+    console.log('ICE состояние:', pc1.iceConnectionState);
+    // new, checking, connected, completed, failed, disconnected, closed
+};
+```
